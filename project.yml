@@ -7,9 +7,11 @@ targets:
   DiscordTranslate:
     type: application
     platform: iOS
-    sources: [DiscordTranslate]
+    sources:
+      - path: .
+        includes: ["*.swift"]
     info:
-      path: DiscordTranslate/Info.plist
+      path: Info.plist
       properties:
         CFBundleDisplayName: Discord翻译
         UILaunchScreen: {}
