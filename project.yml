@@ -1,0 +1,24 @@
+name: DiscordTranslate
+options:
+  bundleIdPrefix: com.lin
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  DiscordTranslate:
+    type: application
+    platform: iOS
+    sources: [DiscordTranslate]
+    info:
+      path: DiscordTranslate/Info.plist
+      properties:
+        CFBundleDisplayName: Discord翻译
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lin.discordtranslate
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
